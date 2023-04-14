@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Ejercicios
@@ -138,6 +139,19 @@ namespace Ejercicios
 
 
             //PRACTICA 11
+
+            Console.WriteLine("dame el numero inicial");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("dame el numero final");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            Random gen = new Random();
+
+            int numR = gen.Next(num1, num2);
+
+            Thread.Sleep(250);
+            Console.WriteLine(numR);
 
 
 
